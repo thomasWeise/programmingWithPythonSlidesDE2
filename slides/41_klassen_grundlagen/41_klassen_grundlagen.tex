@@ -140,7 +140,7 @@
 \begin{itemize}%
 \item Klassen bieten uns die notwendige Abstraktion.%
 %
-\item<2-> Wir könnten eine Basisklasse \pythonil{Document} für Dokument-Objekte definieren, die die notwendigen Operationen zum Einfügen von Text oder Grafiken definiert.%
+\item<2-> Wir könnten eine Basisklasse \pythonil{Document} für Dokument-Objekte erstellen, die die notwendigen Operationen zum Einfügen von Text oder Grafiken definiert.%
 %
 \item<3-> Jede dieser Operationen könnte einfach einen \pythonilIdx{NotImplementedError} auslösen.%
 %
@@ -191,7 +191,7 @@
 }%
 %
 \only<-7>{%
-\item<3-> Zum Beispiel ist \pythonil{int} im Grunde eine Klasse für Ganzzahlen, wohingegen \pythonil{5} eine konkrete Instanz dieser Klase ist.
+\item<3-> Zum Beispiel ist \pythonil{int} im Grunde eine Klasse für Ganzzahlen, wohingegen \pythonil{5} eine konkrete Instanz dieser Klasse ist.
 }%
 %
 \only<-7>{%
@@ -1031,7 +1031,7 @@ Andernfalls werden der \python-Interpreter und Werkzeuge zur statischen Kode-Ana
 }%
 %
 \only<-8>{%
-\item<3-> Why did we learn this right now?%
+\item<3-> Warum haben wir das gelernt?%
 }%
 %
 \item<4-> Weil es in vielen Fällen eine gute Idee ist, Objekte unveränderlich zu machen.%
@@ -1095,9 +1095,9 @@ Wenn die Attribute sich ändern, dann ändern sich die Hash Codes, dann können 
 %
 \item<9-> Er erstellt alle Attribute einer Instanz und weist ihnen ihren ersten Wert zu.%
 %
-\item<10-> Natürlich verwenden wir \glslink{typeHint}{Type Hints}, \glslink{docstring}{Docstrings}, und \glslink{doctest}{Doctests} auch mit Klassen.%
+\item<10-> Natürlich verwenden wir \glslink{typeHint}{Type Hints}, \glslink{docstring}{DocStrings}, und \glslink{doctest}{DocTests} auch mit Klassen.%
 %
-\item<11-> Wir können \DEzB\ mit dem \glslink{typeHint}{Type Hint} ein Attribut als unveränderlich markieren.%
+\item<11-> Wir können \DEzB\ mit dem \glslink{typeHint}{Type Hint} \pythonil{Final} ein Attribut als unveränderlich markieren.%
 %
 \item<12-> Leider setzt \python\ das dann nicht streng durch, man kann das Attribute also trotzdem ändern.%
 %
