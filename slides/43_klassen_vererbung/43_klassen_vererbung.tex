@@ -21,7 +21,7 @@
 %
 \item Vererbung und Spezialisierung sind eines der wichtigsten Konzepte von \glsFull{OOP}.%
 %
-\item<2-> Ein Subklasse kann von einer existierenden Klasse abgeleitet werden.%
+\item<2-> Eine Subklasse kann von einer existierenden Klasse abgeleitet werden.%
 %
 \item<3-> Sie wird dann alle Methoden und Attribute von der Basisklasse erben.%
 %
@@ -122,14 +122,14 @@
 %
 \begin{itemize}%
 \only<-4>{%
-\item Wir willen alle geschlossenen Formen auf der zweidimensionalen Euklidischen Ebene repräsentieren können.%
+\item Wir wollen alle geschlossenen Formen auf der zweidimensionalen Euklidischen Ebene repräsentieren können.%
 }%
 %
 \only<-5>{%
 \item<2-> Wir können eine Basisclass \pythonil{Shape} zu diesem Zweck erstellen.%
 }%
 %
-\item<3-> Jede geschlossene Form hat einen Flächeninhalt~(\emph{area}) und einen Umfang~(\emph{perimeter}).%
+\item<3-> Jede geschlossene Form hat einen Flächeninhalt~\inEN{area} und einen Umfang~\inEN{perimeter}.%
 %
 \item<4-> Darum definiert \pythonil{Shape} zwei Methoden, \pythonil{area} und \pythonil{perimeter}, die die Fläche in Flächeneinheiten und den Umfang in Längeneinheiten zurückliefern.%
 %
@@ -148,11 +148,11 @@
 \parbox{0.4\paperwidth}{\small{%
 \begin{itemize}%
 \only<-5>{%
-\item In Datei\programUrl{classes:shape} erstellen wir diese neue Basisklasse \pythonil{Shape}.%
+\item In Datei \programUrl{classes:shape} erstellen wir diese neue Basisklasse \pythonil{Shape}.%
 }%
 %
 \only<-6>{%
-\item<2-> Die Klasse ist nicht dafpr da, um wirklich instantiiert zu werden.%
+\item<2-> Die Klasse ist nicht dafür da, um wirklich instantiiert zu werden.%
 }%
 %
 \only<-7>{%
@@ -203,7 +203,7 @@
 }%
 %
 \only<-5>{%
-\item<2-> Ein Kreis hat einen Mittelpunkt~(center) und einen Radius.%
+\item<2-> Ein Kreis hat einen Mittelpunkt~\inEN{center} und einen Radius.%
 }%
 %
 \only<-6>{%
@@ -219,7 +219,7 @@
 }%
 %
 \only<-9>{%
-\item<6-> Die Klasse \pythonil{Circle} hätte zwei Attributes.%
+\item<6-> Die Klasse \pythonil{Circle} hätte zwei Attribute.%
 }%
 %
 \only<-10>{%
@@ -316,7 +316,7 @@
 }%
 %
 \only<-6>{%
-\item<2-> Wir erstellen die Instance \pythonil{circ} of \pythonil{Circle} by providing the \pythonil{point=Point(2, 3)} and \pythonil{radius=4}.%
+\item<2-> Wir erstellen die Instance \pythonil{circ} of \pythonil{Circle} und geben \pythonil{point=Point(2, 3)} und \pythonil{radius=4} an.%
 }%
 %
 \only<-7>{%
@@ -440,7 +440,7 @@
 }%
 %
 \only<-11>{%
-\item<8-> Wir können also annehmen, dass alle nicht-abstrakten Subklassen von \pythonil{Polygon} immer die Methode \pythonil{points} vernünftig implementieren und diese die Sequenz von Eckpunkten des Polygons lifert.%
+\item<8-> Wir können also annehmen, dass alle nicht-abstrakten Subklassen von \pythonil{Polygon} immer die Methode \pythonil{points} vernünftig implementieren und diese die Sequenz von Eckpunkten des Polygons liefert.%
 }%
 %
 \only<-13>{%
@@ -484,7 +484,7 @@
 }%
 %
 \only<-20>{%
-\item<19-> Wenn wir ein Subklasse erstellen, die \pythonil{points} implementiert, und dann \pythonil{perimeter} von einem Objekt der Subklasse aufrufen, dann wird das funktionieren.%
+\item<19-> Wenn wir eine Subklasse erstellen, die \pythonil{points} implementiert, und dann \pythonil{perimeter} von einem Objekt der Subklasse aufrufen, dann wird das funktionieren.%
 }%
 %
 \only<-23>{%
@@ -602,7 +602,7 @@
 }%
 %
 \only<-16>{%
-\item<13-> Die Höhe ist der Unterschied zwischen den x\nobreakdashes-Koordinaten der beiden Eckpunkte.%
+\item<13-> Die Höhe ist der Unterschied zwischen den y\nobreakdashes-Koordinaten der beiden Eckpunkte.%
 }%
 %
 \only<-17>{%
@@ -714,10 +714,10 @@
 %
 \begin{itemize}%
 \only<-10>{%
-\item Wir haben nun diskutiert wie Veerbung mit Klassen in \python\ funktioniert.%
+\item Wir haben nun diskutiert wie Vererbung mit Klassen in \python\ funktioniert.%
 }%
 %
-\only<-11>{%
+\only<-10>{%
 \item<2-> Wir benutzten dieses Wissen, um eine Hierarchie von geometrischen Objekten in der zweidimensionalen Euklidischen Ebene zu konstruieren.%
 }%
 %
@@ -741,15 +741,17 @@
 \item<6-> Die Klassen \pythonil{Circle}, \pythonil{Triangle}, und \pythonil{Rectangle} haben diese \glslink{API}{API} dann implementiert.%
 }%
 %
-\only<-16>{%
+\only<-15>{%
 \item<7-> OK, das klingt etwas weit hergeholt.%
 }%
 %
-\only<-16>{%
+\only<-15>{%
 \item<8-> Aber in der Realität könnte es schon so in etwa funktionieren.%
 }%
 %
+\only<-16>{%
 \item<9-> Stellen wir uns vor das wir eine \glslink{API}{API} zum Erstellen von Grafiken durch Programme erstellen sollen.%
+}%
 %
 \item<10-> Ihre Objekte würden sich dann wie eine blanke Leinwand verhalten.%
 %

@@ -169,7 +169,7 @@ Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 }%
 %
 \only<-23>{%
-\item<20-> Wenn die textuelle Repräsentation der Standard-Kollektionstypen bon \python\ mit \pythonilIdx{str} oder \pythonilIdx{repr} erzeugt wird, dann weden die Elemente der Kollektionen immer \pythonilIdx{repr} zu Stringskonvertiert, nie mit~\pythonilIdx{str}\cite{PEP3140}.%
+\item<20-> Wenn die textuelle Repräsentation der Standard-Kollektionstypen von \python\ mit \pythonilIdx{str} oder \pythonilIdx{repr} erzeugt wird, dann weden die Elemente der Kollektionen immer \pythonilIdx{repr} zu Strings konvertiert, nie mit~\pythonilIdx{str}\cite{PEP3140}.%
 }%
 %
 \only<-25>{%
@@ -238,7 +238,7 @@ Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 }%
 %
 \only<-6>{%
-\item<2-> Wir erinnern uns an die Klasse \pythonil{Point}, mit der wir Punkte in der zweidimensionalen Euklidischen Ebebe dargestellt haben.%
+\item<2-> Wir erinnern uns an die Klasse \pythonil{Point}, mit der wir Punkte in der zweidimensionalen Euklidischen Ebene dargestellt haben.%
 }%
 %
 \only<-7>{%
@@ -325,19 +325,19 @@ Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 \item<23-> Es nimmt einfach an, dass Gleichheit~$=$~Identity, also ein Objekt nur gleich zu sich selbst ist.%
 }%
 %
-\only<-27>{%
+\only<-26>{%
 \item<24-> Wir könnten das reparieren, in dem wir die Dunder-Methode \dunder{eq} selbst implementieren.%
 }%
 %
-\only<-28>{%
+\only<-27>{%
 \item<25-> Diese Methode bekommt ein beliebiges Objekt \pythonil{other} als Parameter und soll \pythonil{True} bei Gleichheit zurückliefern und \pythonil{False} sonst.%
 }%
 %
-\only<-29>{%
+\only<-28>{%
 \item<26-> Genau wie \pythonil{str(o)} \pythonil{o.__str__()} aufruft, so ruft der \pythonil{a == b}-Operator \pythonil{a.__eq__(b)} auf, wenn \pythonil{a} \dunder{eq} implementiert.%
 }%
 %
-\only<-30>{%
+\only<-29>{%
 \item<27-> Wenn Sie \dunder{eq} implementieren, dann wird \python\ annehmen das \pythonil{(a != b) ==} \pythonil{not (a == b)}\pythonIdx{"!=}\pythonIdx{==}, also annehmen, dass zwei Objekte ungleich sind, wenn sie nicht gleich sind\cite{PEP207}.%
 }%
 %
