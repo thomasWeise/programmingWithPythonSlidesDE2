@@ -19,11 +19,11 @@
 \frametitle{Einleitung}%
 \begin{itemize}%
 %
-\item Vererbung und Spezialisierung sind eines der wichtigsten Konzepte von \glsFull{OOP}.%
+\item Vererbung und Spezialisierung sind eines der wichtigsten Konzepte der Object-Orientierten Programmierng~(\glsShort{OOP})~\inEN{object-oriented programming}.%
 %
 \item<2-> Eine Subklasse kann von einer existierenden Klasse abgeleitet werden.%
 %
-\item<3-> Sie wird dann alle Methoden und Attribute von der Basisklasse erben.%
+\item<3-> Sie erbt dann Methoden und Attribute von der Basisklasse.%
 %
 \item<4-> Sie kann auch neue Methoden und Attribute hinzufügen.%
 %
@@ -717,57 +717,59 @@
 \item Wir haben nun diskutiert wie Vererbung mit Klassen in \python\ funktioniert.%
 }%
 %
-\only<-10>{%
+\only<-11>{%
 \item<2-> Wir benutzten dieses Wissen, um eine Hierarchie von geometrischen Objekten in der zweidimensionalen Euklidischen Ebene zu konstruieren.%
 }%
 %
 \only<-11>{%
-\item<2-> Während wir das gemacht haben, haben wir gesehen, wie Methoden auf eine abstrakte Art in einer Basisklasse definiert und dann in Subklassen implementiert werden können.%
+\item<3-> Während wir das gemacht haben, haben wir gesehen, wir Methoden auf eine abstrakte Art in einer Basisklasse definiert und dann in Subklassen implementiert werden können.%
 }%
 %
 \only<-12>{%
-\item<3-> Was wir hier in einer sehr abgekürzten Art gesehen haben ist, wie komplexe \glslink{API}{APIs} definiert und implementiert werden können.%
-}%
-%
-\only<-13>{%
-\item<4-> Auf eine gewisse Art definiert die Klasse \pythonil{Shape} ja eine \glslink{API}{API} für geometrische Objekte.%
+\item<4-> Was wir hier in einer sehr abgekürzten Art gesehen haben ist, wie komplexe \glslink{API}{APIs} definiert und implementiert werden können.%
 }%
 %
 \only<-14>{%
-\item<5-> Sie definiert dass jedes Objekt die beiden Operationen \pythonil{area()} und \pythonil{perimeter()} unterstützen muss.%
+\item<5-> Auf eine gewisse Art definiert die Klasse \pythonil{Shape} ja eine \glslink{API}{API} für geometrische Objekte.%
 }%
 %
 \only<-15>{%
-\item<6-> Die Klassen \pythonil{Circle}, \pythonil{Triangle}, und \pythonil{Rectangle} haben diese \glslink{API}{API} dann implementiert.%
-}%
-%
-\only<-15>{%
-\item<7-> OK, das klingt etwas weit hergeholt.%
-}%
-%
-\only<-15>{%
-\item<8-> Aber in der Realität könnte es schon so in etwa funktionieren.%
+\item<6-> Sie definiert dass jedes Objekt die beiden Operationen \pythonil{area()} und \pythonil{perimeter()} unterstützen muss.%
 }%
 %
 \only<-16>{%
-\item<9-> Stellen wir uns vor das wir eine \glslink{API}{API} zum Erstellen von Grafiken durch Programme erstellen sollen.%
+\item<7-> Die Klassen \pythonil{Circle}, \pythonil{Triangle}, und \pythonil{Rectangle} haben diese \glslink{API}{API} dann implementiert.%
 }%
 %
-\item<10-> Ihre Objekte würden sich dann wie eine blanke Leinwand verhalten.%
+\only<-16>{%
+\item<8-> OK, das klingt etwas weit hergeholt.%
+}%
 %
-\item<11-> Sie hätten wahrscheinlich eine Methode, um ein Rechteck mit bestimmten Koordinaten und einer bestimmten Farbe zu malen.%
+\only<-16>{%
+\item<9-> Aber in der Realität könnte es schon so in etwa funktionieren.%
+}%
 %
-\item<12-> Sie hätten wahrscheinlich eine Methode, um eine Linie mit bestimmten Koordinaten und einer bestimmten Farbe zu malen.%
+\only<-16>{%
+\item<10-> Stellen wir uns vor das wir eine \glslink{API}{API} zum Erstellen von Grafiken durch Programme erstellen sollen.%
+}%
 %
-\item<13-> Sie könnten das als abstrakte Basisklasse mit mindestens zwei Methoden, \pythonil{draw_line} und \pythonil{draw_rectangle}, definieren.%
+\only<-17>{%
+\item<11-> Ihre Objekte würden sich dann wie eine blanke Leinwand verhalten.%
+}%
 %
-\item<14-> Sie könnten diese Methoden dann in einer Subklasse so implementieren, dass sie eine \glslink{SVG}{SVG}-Grafik\cite{DDGLMSWFJJ2011SVGSSE} im Speicher erstellen.%
+\item<12-> Sie hätten wahrscheinlich eine Methode, um ein Rechteck mit bestimmten Koordinaten und einer bestimmten Farbe zu malen.%
 %
-\item<15-> Eine andere Subklasse könnte stattdessen eine Grafik im Adobe~\pgls{formatPDF}-Format\cite{A2024WDPM,A2008P3DMPDFP1P1} erstellen.%
+\item<13-> Sie hätten wahrscheinlich eine Methode, um eine Linie mit bestimmten Koordinaten und einer bestimmten Farbe zu malen.%
 %
-\item<16-> So etwas zu machen ist viel komplizierter braucht viel mehr Platz als wie hier für ein vernünftiges Beispiel investieren können.%
+\item<14-> Sie könnten das als abstrakte Basisklasse mit mindestens zwei Methoden, \pythonil{draw_line} und \pythonil{draw_rectangle}, definieren.%
 %
-\item<17-> Der prinzipielle Ansatz wäre aber wahrscheinlich nicht sehr anders, als was wir hier gelernt haben.%
+\item<15-> Sie könnten diese Methoden dann in einer Subklasse so implementieren, dass sie eine \glslink{SVG}{SVG}-Grafik\cite{DDGLMSWFJJ2011SVGSSE} im Speicher erstellen.%
+%
+\item<16-> Eine andere Subklasse könnte stattdessen eine Grafik im Adobe~\pgls{formatPDF}-Format\cite{A2024WDPM,A2008P3DMPDFP1P1} erstellen.%
+%
+\item<17-> So etwas zu machen ist viel komplizierter braucht viel mehr Platz als wie hier für ein vernünftiges Beispiel investieren können.%
+%
+\item<18-> Der prinzipielle Ansatz wäre aber wahrscheinlich nicht sehr anders, als was wir hier gelernt haben.%
 \end{itemize}%
 \end{frame}%
 %
