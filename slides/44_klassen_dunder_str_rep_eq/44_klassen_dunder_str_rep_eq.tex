@@ -75,7 +75,7 @@ Diese Repräsentation ist hauptsächlich für Endbenutzer.\uncover<4->{ %
 Sonst ruft es \pythonil{o.__repr__()} auf.}}}\medskip%
 %
 \item<6-> \pythonil{repr(o)}\pythonIdx{repr} sollte idealerweise eine String-Repräsentation liefern, die alle Informationen beinhaltet, die notwendig sind, um das Objekt~\pythonil{o} erneut zu erzeugen\cite{PSF:P3D:TPLR:DM:R}.\uncover<7->{ %
-Das Zielpublikum sind hier Programmier, die am Kode arbeiten, und die \DEzB\ genau Informationen in Log-Dateien schreiben oder nach Fehlern suchen müssen.\uncover<8->{ %
+Das Zielpublikum sind hier Programmier, die am Kode arbeiten, und die \DEzB\ genaue Informationen in Log-Dateien schreiben oder nach Fehlern suchen müssen.\uncover<8->{ %
 \pythonil{repr(o)} ruft die Dunder-Methode \dunder{repr} auf, wenn diese implementiert wurde.\uncover<9->{ %
 Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 }}}%
