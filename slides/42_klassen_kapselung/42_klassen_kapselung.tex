@@ -115,7 +115,7 @@
 }%
 %
 \only<-12>{%
-\item<8-> Es ist nicht möglich, die Zahl $1+10^{16}$ exakt mit den 64~Bit Double Precision Floating Point Numbers\cite{PSF:P3D:TPT:FPAIAL,IEEE2019ISFFPA,H1997IS7FPN} die \python\ bietet, darzustellen.%
+\item<8-> Es ist nicht möglich, die Zahl $1+10^{16}$ exakt mit den 64~Bit Double Precision Floating Point Numbers\scite{PSF:P3D:TPT:FPAIAL,IEEE2019ISFFPA,H1997IS7FPN} die \python\ bietet, darzustellen.%
 }%
 %
 \only<-13>{%
@@ -228,7 +228,7 @@
 \frametitle{Kahan-Summe: Sinn und Zweck}%
 \begin{itemize}%
 %
-\item Zum Glück hatten \citeauthor{K1965PFRORTE}\cite{K1965PFRORTE} und \citeauthor{B1968NSIMA}\cite{B1968NSIMA} in den 1960ern eine Idee, wie man die Präzision für Addition erhöhen kann\cite{G1991WECSSKAFPA,L2020RWECSSKAFPA}\only<-1>{.}\uncover<2->{:}%
+\item Zum Glück hatten \citeauthor{K1965PFRORTE}\scite{K1965PFRORTE} und \citeauthor{B1968NSIMA}\scite{B1968NSIMA} in den 1960ern eine Idee, wie man die Präzision für Addition erhöhen kann\scite{G1991WECSSKAFPA,L2020RWECSSKAFPA}\only<-1>{.}\uncover<2->{:}%
 %
 \item<2-> Wir addieren Zahlen in einer Variable \pythonil{sum} und verwenden zusätzlich eine Variable~\pythonil{cs}, in der wir uns merken, wie weit das Ergebnis daneben liegt.%
 %
@@ -344,17 +344,17 @@ Diese tauchen dann wieder in \pythonil{error} auf.}}}%%
 \aAssign{\aVar{ccs}}{0}\;%
 %
 \For(\algoCmtInline{Für jede der $n$ zu addierenden Zahlen in $x$.}){$\aVar{i} \in \intRange{0}{n-1}$}{%
-\aAssign{\aVar{t}}{\aVar{sum}+\aArrayIndex{\aVar{x}}{\aVar{i}}}\algoCmtEndline{Summe und Fehlerterm 1.Ordnung~(unten)\cite{B1968NSIMA,K1965PFRORTE}.}%
-\lIf(\algoCmtInline{\citeauthor{N1974REVZSES}'s Verbesserung\cite{N1974REVZSES}}){$|\aVar{sum}|\geq|\aArrayIndex{\aVar{x}}{\aVar{i}}|$}{%
+\aAssign{\aVar{t}}{\aVar{sum}+\aArrayIndex{\aVar{x}}{\aVar{i}}}\algoCmtEndline{Summe und Fehlerterm 1.Ordnung~(unten)\scite{B1968NSIMA,K1965PFRORTE}.}%
+\lIf(\algoCmtInline{\citeauthor{N1974REVZSES}'s Verbesserung\scite{N1974REVZSES}}){$|\aVar{sum}|\geq|\aArrayIndex{\aVar{x}}{\aVar{i}}|$}{%
 \aAssign{\aVar{c}}{(\aVar{sum}-\aVar{t})+\aArrayIndex{\aVar{x}}{\aVar{i}}}%
 }\lElse{%
 \aAssign{\aVar{c}}{(\aArrayIndex{\aVar{x}}{\aVar{i}}-\aVar{t})+\aVar{sum}}%
 }%
 %
 \aAssign{\aVar{sum}}{\aVar{t}}\algoCmtEndline{Die Gesamtsumme wird upgedated.}%
-\aAssign{\aVar{t}}{\aVar{cs}+\aVar{c}}\algoCmtEndline{Fehlersumme 2.~Ordnung von~\citeauthor{K2006AGKBSA}\cite{K2006AGKBSA} beginnt.}%
+\aAssign{\aVar{t}}{\aVar{cs}+\aVar{c}}\algoCmtEndline{Fehlersumme 2.~Ordnung von~\citeauthor{K2006AGKBSA}\scite{K2006AGKBSA} beginnt.}%
 %
-\lIf(\algoCmtInline{\citeauthor{N1974REVZSES}'s Verbesserung\cite{N1974REVZSES}}){$|\aVar{cs}|\geq|\aVar{c}|$}{%
+\lIf(\algoCmtInline{\citeauthor{N1974REVZSES}'s Verbesserung\scite{N1974REVZSES}}){$|\aVar{cs}|\geq|\aVar{c}|$}{%
 \aAssign{\aVar{cc}}{(\aVar{cs}-\aVar{t})+\aVar{c}}%
 }\lElse{%
 \aAssign{\aVar{c}}{(\aVar{c}-\aVar{t})+\aVar{cs}}%
@@ -376,10 +376,10 @@ Diese tauchen dann wieder in \pythonil{error} auf.}}}%%
 }%
 %
 \only<-3>{%
-\item<2-> \Citeauthor{N1974REVZSES}, \DEzB, hat \citeyear{N1974REVZSES} eine Verbesserung für den Fall, dass die laufende Summe kleiner als die zu addierende Zahl ist, beigesteuert\cite{N1974REVZSES}.%
+\item<2-> \Citeauthor{N1974REVZSES}, \DEzB, hat \citeyear{N1974REVZSES} eine Verbesserung für den Fall, dass die laufende Summe kleiner als die zu addierende Zahl ist, beigesteuert\scite{N1974REVZSES}.%
 }%
 %
-\item<3-> \Citeauthor{K2006AGKBSA}\cite{K2006AGKBSA} hat dann die Präzision weiter verbessert, in dem eine Fehlersumme für die Fehlersumme eingeführt hat, also eine Fehlersumme 2.~Ordnung, und so weiter.%
+\item<3-> \Citeauthor{K2006AGKBSA}\scite{K2006AGKBSA} hat dann die Präzision weiter verbessert, in dem eine Fehlersumme für die Fehlersumme eingeführt hat, also eine Fehlersumme 2.~Ordnung, und so weiter.%
 %
 \item<4-> Dieser verbesserte Algorithmus ist hier dargestellt.%
 %
@@ -388,7 +388,7 @@ Diese tauchen dann wieder in \pythonil{error} auf.}}}%%
 %
 \setcounter{algocf}{0}%
 \locateAlgorithm{2-}{%
-Die \citeauthor{K1965PFRORTE}-\citeauthor{B1968NSIMA}-\citeauthor{N1974REVZSES} Summe Zweiter Ordnung~\cite{B1968NSIMA,K1965PFRORTE,N1974REVZSES,K2006AGKBSA} über einen Array~\aVar{x} mit $n$~Zahlen, nach der Spezifikation von \citeauthor{K2006AGKBSA}\cite{K2006AGKBSA}.}{\innerAlgorithm%
+Die \citeauthor{K1965PFRORTE}-\citeauthor{B1968NSIMA}-\citeauthor{N1974REVZSES} Summe Zweiter Ordnung~\scite{B1968NSIMA,K1965PFRORTE,N1974REVZSES,K2006AGKBSA} über einen Array~\aVar{x} mit $n$~Zahlen, nach der Spezifikation von \citeauthor{K2006AGKBSA}\scite{K2006AGKBSA}.}{\innerAlgorithm%
 }{0.15}{0.385}{0.85}{0.7}% end algorithm
 %
 \end{frame}%
@@ -630,7 +630,7 @@ Kapselung erlaubt es daher Programmierern, sicherzustellen, dass der Zustand von
 %
 \only<43-45>{\vspace{-0.5em}%
 \bestPractice{doubleUnderscore}{\small{%
-Namen von Attributen oder Methoden, die mit einem doppelten Unterstrich beginnen~(\pythonilIdx{\_\_}) müssen als  \emph{privat} betrachtet werden\cite{PSF:P3D:TPLR:PNM,PSF:P3D:TPT:C:PV}.\uncover<44->{ %
+Namen von Attributen oder Methoden, die mit einem doppelten Unterstrich beginnen~(\pythonilIdx{\_\_}) müssen als  \emph{privat} betrachtet werden\scite{PSF:P3D:TPLR:PNM,PSF:P3D:TPT:C:PV}.\uncover<44->{ %
 Auf sie sollte nicht von außerhalb der Klasse zugegriffen werden.\uncover<45->{ %
 Alle internen Attribute und Methoden einer Klasse sollte nicht von außen zugänglich sein und sollten deshalb nach dieser Konvention benannt werden, mit einem doppelten Unterstrich als Präfix.}}}%
 }%
@@ -698,7 +698,7 @@ Alle internen Attribute und Methoden einer Klasse sollte nicht von außen zugän
 }%
 %
 \only<-9>{%
-\item<9-> Wir schreiben die Verbesserung von \citeauthor{N1974REVZSES}\cite{N1974REVZSES} als ein inline \pythonil{if...else}-Statement.%
+\item<9-> Wir schreiben die Verbesserung von \citeauthor{N1974REVZSES}\scite{N1974REVZSES} als ein inline \pythonil{if...else}-Statement.%
 }%
 %
 \only<-11>{%
@@ -879,7 +879,7 @@ Alle internen Attribute und Methoden einer Klasse sollte nicht von außen zugän
 }%
 %
 \only<-23>{%
-\item<15-> Es basiert auf dem Algorithmus von \citeauthor{S1997APFPAAFRGP}\cite{S1997APFPAAFRGP,H2005BFPSATFPPR}, welcher dynamisch eine Liste von Hilfsvariablen managed um eine beweisbar genaue Summe zu berechnen~(mit Ergebnis~\pythonil{float}).%
+\item<15-> Es basiert auf dem Algorithmus von \citeauthor{S1997APFPAAFRGP}\scite{S1997APFPAAFRGP,H2005BFPSATFPPR}, welcher dynamisch eine Liste von Hilfsvariablen managed um eine beweisbar genaue Summe zu berechnen~(mit Ergebnis~\pythonil{float}).%
 }%
 %
 \only<-24>{%
@@ -1023,7 +1023,7 @@ Unsere Klasse \pythonil{KahanSum} ist ein Beispiel dafür.}}%
 %
 \item<12-> Sie werden dadurch nicht privat.%
 %
-\item<13-> Der \python-Interpreter verändert zwar ihre Namen intern\cite{PEP8}, aber ein cleverer Programmierer kann sie trotzdem auslesen und ändern.%
+\item<13-> Der \python-Interpreter verändert zwar ihre Namen intern\scite{PEP8}, aber ein cleverer Programmierer kann sie trotzdem auslesen und ändern.%
 %
 \item<14-> Werkzeuge wie \mypy\ können solches Fehlverhalten finden.%
 %

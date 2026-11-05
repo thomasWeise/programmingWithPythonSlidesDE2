@@ -54,7 +54,7 @@ Das ist schon wahr.\uncover<8->{ Ich wollte es nur nochmal sagen.}}%
 \frametitle{\texttt{\_\_eq\_\_} und \texttt{\_\_hash\_\_}}%
 \begin{itemize}%
 \item Wir müssten also nur eine weitere Methode, implementieren nämlich \dunder{hash}.
-\item<2-> Für die zwei Dunder-Methoden \dunder{eq} und \dunder{hash} muss immer gelten\cite{PSF:P3D:TPLR:DM:H}:%
+\item<2-> Für die zwei Dunder-Methoden \dunder{eq} und \dunder{hash} muss immer gelten\scite{PSF:P3D:TPLR:DM:H}:%
 \end{itemize}%
 %
 \uncover<3->{%
@@ -65,7 +65,7 @@ Das ist schon wahr.\uncover<8->{ Ich wollte es nur nochmal sagen.}}%
 %
 \uncover<4->{%
 \begin{itemize}%
-\item Das ist das selbe wie\cite{PSF:P3D:TPSL:BIE,PSF:P3D:TPLR:DM:H}:%
+\item Das ist das selbe wie\scite{PSF:P3D:TPSL:BIE,PSF:P3D:TPLR:DM:H}:%
 \end{itemize}%
 %
 \begin{equation}%
@@ -94,7 +94,7 @@ Das ist schon wahr.\uncover<8->{ Ich wollte es nur nochmal sagen.}}%
 }%
 %
 \only<-14>{%
-\item<5-> Dictionaries in \python~(und \pgls{Java}) benutzen intern Tabellen, in denen die Schlüssel-Wert-Paare gespeichert sind\cite{G2020PHTUTH,L2011PDI}.%
+\item<5-> Dictionaries in \python~(und \pgls{Java}) benutzen intern Tabellen, in denen die Schlüssel-Wert-Paare gespeichert sind\scite{G2020PHTUTH,L2011PDI}.%
 }%
 %
 \only<-15>{%
@@ -114,11 +114,11 @@ Das ist schon wahr.\uncover<8->{ Ich wollte es nur nochmal sagen.}}%
 }%
 %
 \only<-19>{%
-\item<10-> Hash-Tabellen\cite{K1998SAS,CLRS2009ITA,SKS2019DSC} sind sehr schnell.%
+\item<10-> Hash-Tabellen\scite{K1998SAS,CLRS2009ITA,SKS2019DSC} sind sehr schnell.%
 }%
 %
 \only<-20>{%
-\item<11-> Sie haben eine Element-weise Lese-, Such-, und Update-Komplexität von~\bigOb{1}\cite{H2025PM:PBOTTCODDSIPP33,PSF:TPW:TC,N2022CCSFPO}.%
+\item<11-> Sie haben eine Element-weise Lese-, Such-, und Update-Komplexität von~\bigOb{1}\scite{H2025PM:PBOTTCODDSIPP33,PSF:TPW:TC,N2022CCSFPO}.%
 }%
 %
 \only<-21>{%
@@ -147,7 +147,7 @@ Das ist schon wahr.\uncover<8->{ Ich wollte es nur nochmal sagen.}}%
 %
 \item<20-> Beide Operationen, Einfügen und Suchen, funktionieren nun in~\bigOb{1}.%
 %
-\item<21-> Natürlich war das eine sehr krasse Vereinfachung\cite{G2020PHTUTH,L2011PDI}.%
+\item<21-> Natürlich war das eine sehr krasse Vereinfachung\scite{G2020PHTUTH,L2011PDI}.%
 %
 \item<22-> Es könnte \DEzB\ verschiedene Ganzzahlen mit dem selben Ergebnis für \pythonil{i \% len(l)} geben.%
 %
@@ -250,7 +250,7 @@ it is advised to mix together the hash values of the components of the object th
 \uncover<2->{%
 %
 \bestPractice{hash}{%
-Um \dunder{eq} und \dunder{hash} zu implementieren, sind die folgenden Regeln zu beachten\cite{PSF:P3D:TPLR:DM:H}\only<-2>{.}\uncover<3->{:%
+Um \dunder{eq} und \dunder{hash} zu implementieren, sind die folgenden Regeln zu beachten\scite{PSF:P3D:TPLR:DM:H}\only<-2>{.}\uncover<3->{:%
 \begin{itemize}%
 %
 \only<-6>{%

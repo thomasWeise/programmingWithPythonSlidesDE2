@@ -75,7 +75,7 @@
 \begin{frame}%
 \frametitle{Use Case: Group Data and Operations}%
 \begin{itemize}%
-\item Der erste wichtige Use Case für Klassen (\pythoniles{class}) in \python\ ist, dass sie uns eine Möglichkeite bieten, eine Datenstruktur zusammen mit den Operationen für die Datenstruktur zu definieren~\cite{PSF:P3D:TPT:C}.%
+\item Der erste wichtige Use Case für Klassen (\pythoniles{class}) in \python\ ist, dass sie uns eine Möglichkeite bieten, eine Datenstruktur zusammen mit den Operationen für die Datenstruktur zu definieren~\scite{PSF:P3D:TPT:C}.%
 %
 \item<2-> Das erlaubt es uns \DEzB\ eine \pythonil{class} für komplexe Zahlen zu definieren, die die Attribute \pythonil{real_part} und \pythonil{imaginary_part} hat.%
 %
@@ -98,7 +98,7 @@
 }%
 %
 \only<-9>{%
-\item<3-> Auf der Ausgabeseite wollen Sie verschiedene Formate unterstützen, \DEzB \libreoffice\cite{DF2024LTDF,GL2012LTSOOSSCBAFACSOL}, \microsoftWord\cite{MS2024MW,DR2019STFAWAUMW}, und Adobe~\pgls{formatPDF}\cite{A2024WDPM,A2008P3DMPDFP1P1}.%
+\item<3-> Auf der Ausgabeseite wollen Sie verschiedene Formate unterstützen, \DEzB \libreoffice\scite{DF2024LTDF,GL2012LTSOOSSCBAFACSOL}, \microsoftWord\scite{MS2024MW,DR2019STFAWAUMW}, und Adobe~\pgls{formatPDF}\scite{A2024WDPM,A2008P3DMPDFP1P1}.%
 }%
 %
 \only<-12>{%
@@ -183,7 +183,7 @@
 \begin{itemize}%
 %
 \only<-5>{%
-\item Klassen sind Datentypen die Datenelemente und den Kode, der auf diesen arbeitet, miteinander verbinden\cite{PSF:P3D:TPT:C}.%
+\item Klassen sind Datentypen die Datenelemente und den Kode, der auf diesen arbeitet, miteinander verbinden\scite{PSF:P3D:TPT:C}.%
 }%
 %
 \only<-6>{%
@@ -220,7 +220,7 @@
 \only<-11>{%
 \uncover<9->{%
 \bestPractice{className}{\sloppy%
-Klassennamen sollten der \inQuotes{CapWords}-Konvention folgen, die auch oft \emph{Camel Case} genannt wird\cite{ZZH2021AESOTUAEOISIP}, also aussehen wir \pythonil{MyClass} oder \pythonil{UniversityDepartment}, aber \alert{nicht} wie \pythonil{my_class} der \pythonil{university_department}~\cite{PEP8}.}%
+Klassennamen sollten der \inQuotes{CapWords}-Konvention folgen, die auch oft \emph{Camel Case} genannt wird\scite{ZZH2021AESOTUAEOISIP}, also aussehen wir \pythonil{MyClass} oder \pythonil{UniversityDepartment}, aber \alert{nicht} wie \pythonil{my_class} der \pythonil{university_department}~\scite{PEP8}.}%
 }}%
 %
 \uncover<10->{%
@@ -270,7 +270,7 @@ Klassennamen sollten der \inQuotes{CapWords}-Konvention folgen, die auch oft \em
 }%
 %
 \only<-24>{%
-\item<21-> Dieser Spezialkommentar fängt immer mit einem Doppelpunkt nach dem Hashmark an, also mit \pythonil{\#: }\cite{SD2024SIDFD:DCAD}.%
+\item<21-> Dieser Spezialkommentar fängt immer mit einem Doppelpunkt nach dem Hashmark an, also mit \pythonil{\#: }\scite{SD2024SIDFD:DCAD}.%
 }%
 %
 \only<-25>{%
@@ -526,7 +526,7 @@ Klassennamen sollten der \inQuotes{CapWords}-Konvention folgen, die auch oft \em
 }%
 %
 \only<-48>{%
-\item<36-> Der \glslink{typeHint}{Type Hint} \pythonilIdx{Final} aus dem Modul \pythonilIdx{typing} annotiert eine Variable oder ein Attribut als unveränderlich\cite{PEP591}.%
+\item<36-> Der \glslink{typeHint}{Type Hint} \pythonilIdx{Final} aus dem Modul \pythonilIdx{typing} annotiert eine Variable oder ein Attribut als unveränderlich\scite{PEP591}.%
 }%
 %
 \only<-49>{%
@@ -697,7 +697,7 @@ Ein initialer Wert muss dort jedem Attribut sofort zugewiesen werden.%
 \only<38-39>{%
 \uncover<38-39>{
 \bestPractice{attributeTypeHint}{%
-Jedes Attribute eines Objekts muss mit einem \glslink{typeHint}{Type Hint} annotiert werden, wenn es im Initialisierer \dunder{init} erstellt wird\cite{LM2024WTMD}.\uncover<39->{ %
+Jedes Attribute eines Objekts muss mit einem \glslink{typeHint}{Type Hint} annotiert werden, wenn es im Initialisierer \dunder{init} erstellt wird\scite{LM2024WTMD}.\uncover<39->{ %
 Dabei funktionieren Type Hints genau wir bei normalen Variablen.}}%
 }%
 }%
@@ -707,7 +707,7 @@ Dabei funktionieren Type Hints genau wir bei normalen Variablen.}}%
 \bestPractice{attributeFinal}{%
 Der \glslink{typeHint}{Type Hint} \pythonilIdx{Final}\pythonIdx{typing!Final} markiert eine Variable oder ein Attribut als unveränderlich.\uncover<41->{ %
 Alle Attribute, die Sie nach der Erstellung nicht mehr verändern wollen, sollten mit \pythonilIdx{Final}\pythonIdx{typing!Final} annotiert werden.\uncover<42->{ %
-Dabei ist das natürlich nur ein \glslink{typeHint}{Type Hint}, wird also nicht vom Interpreter durchgesetzt\cite{PEP591} und bösartiger Kode kann die Attribute immer noch verändern.\uncover<43->{ %
+Dabei ist das natürlich nur ein \glslink{typeHint}{Type Hint}, wird also nicht vom Interpreter durchgesetzt\scite{PEP591} und bösartiger Kode kann die Attribute immer noch verändern.\uncover<43->{ %
 Ein Type Checker wie \mypy\ kann aber solche falschen Veränderungen erkennen und Warnungen ausgeben.%
 }}}}%
 }}%
@@ -715,8 +715,8 @@ Ein Type Checker wie \mypy\ kann aber solche falschen Veränderungen erkennen un
 \only<44-45>{%
 \uncover<44-45>{%
 \bestPractice{attributeDocstring}{%
-Ein Attribute wird mit einer Zeile \emph{über} seiner Initialisierung dokumentiert, und zwar mit einem \emph{Kommentar} das mit \pythonilIdx{\#: } anfängt und die Bedeutung des Attributs erklärt\cite{SD2024SIDFD:DCAD}.\uncover<45->{ %
-Manchmal wird die Dokumentation auch als String direkt unter dem Attribut angegeben\cite{PEP287}, aber wir bleiben bei der obigen Methode, weil sie auch von Werkzeugen wie \DEzB\ \sphinx\ unterstützt wird.%
+Ein Attribute wird mit einer Zeile \emph{über} seiner Initialisierung dokumentiert, und zwar mit einem \emph{Kommentar} das mit \pythonilIdx{\#: } anfängt und die Bedeutung des Attributs erklärt\scite{SD2024SIDFD:DCAD}.\uncover<45->{ %
+Manchmal wird die Dokumentation auch als String direkt unter dem Attribut angegeben\scite{PEP287}, aber wir bleiben bei der obigen Methode, weil sie auch von Werkzeugen wie \DEzB\ \sphinx\ unterstützt wird.%
 }}%
 }}%
 %
@@ -967,11 +967,11 @@ Andernfalls werden der \python-Interpreter und Werkzeuge zur statischen Kode-Ana
 %
 \item<4-> Das, was verhindern soll, dass sie verändert werden, ist der \glslink{typeHint}{Type Hint} \pythonil{Final}.%
 %
-\item<5-> Wie schon gesagt, \glslink{typeHint}{Type Hints} sind nur Hinweise und werden vom Interpreter nicht durchgesetzt\cite{PEP591}.%
+\item<5-> Wie schon gesagt, \glslink{typeHint}{Type Hints} sind nur Hinweise und werden vom Interpreter nicht durchgesetzt\scite{PEP591}.%
 %
 \item<6-> Die Attribute \pythonil{x} und \pythonil{y} von Instanzen der Klasse \pythonil{Point} können also doch geändert werden.%
 %
-\item<7-> Werkzeuge wie \mypy\ und sogar \pycharm\ erkennen solche Fehler aber\cite{PEP591}.%
+\item<7-> Werkzeuge wie \mypy\ und sogar \pycharm\ erkennen solche Fehler aber\scite{PEP591}.%
 %
 \end{itemize}%
 %

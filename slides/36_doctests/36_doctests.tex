@@ -59,7 +59,7 @@
 %
 \item<8-> Aber im Idealfall würde \pytest\ dieses Tests auch in den Docstrings finden, sie ausführen und prüfen.%
 %
-\item<9-> Tatsächlich ist so eine perfekte Synthese von Dokumentation und Testsen möglich -- mit den so-genannten \glslink{doctest}{Doctests}\cite{PSF:P3D:TPSL:DTIPE}.%
+\item<9-> Tatsächlich ist so eine perfekte Synthese von Dokumentation und Testsen möglich -- mit den so-genannten \glslink{doctest}{Doctests}\scite{PSF:P3D:TPSL:DTIPE}.%
 %
 \end{itemize}%
 \end{frame}%
@@ -260,7 +260,7 @@ Wir fügen dafür ein kleines Schnipsel \python-Kode gefolgt von seinem erwartet
 Die erste Zeile des Kodes hat das Präfix~\pythonil{>>>}\pythonIdx{>\strut>\strut>}.}\uncover<15->{ %
 Wenn der Kode mehrere Zeilen braucht, dann haben weitere Zeilen das Präfix \pythonil{...}.}\uncover<16->{ %
 Nach dem Schnipsel, schreiben wir die erwartete Ausganbe.}}\only<17->{\uncover<17->{ %
-Die Doctests können von Modulen wie \pythonilIdx{doctest}\cite{PSF:P3D:TPSL:DTIPE} oder Werkzeugen wie \pytest\cite{KPDT2024PD:HTRD} ausgeführt werden.}\uncover<18->{ %
+Die Doctests können von Modulen wie \pythonilIdx{doctest}\scite{PSF:P3D:TPSL:DTIPE} oder Werkzeugen wie \pytest\scite{KPDT2024PD:HTRD} ausgeführt werden.}\uncover<18->{ %
 Diese extrahieren den Kode, führen ihn aus, und vergleichen die Ausgabe mit der erwarteten Ausgabe.}\uncover<19->{ %
 Wenn sie nicht übereinstimmen, dann schlägt der Test fehl.}\uncover<20->{ %
 Wir nehmen hier immer \pytest.%

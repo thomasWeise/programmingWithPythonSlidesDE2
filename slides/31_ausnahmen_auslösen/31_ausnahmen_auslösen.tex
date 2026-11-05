@@ -78,7 +78,7 @@ Vielleicht sind die ja falsch.}}%
 %
 \item \alert{Wir ignorieren einfach, dass die Daten falsch sind}, und rechnen normal mit ihnen.\uncover<4->{ %
 Wenn die Eingabedaten von unserem Programm falsch sind, dann produziert es eben auch falsche Ausgabedaten.\uncover<5->{ %
-Diese Taktik nenn man \glsFull{GIGO}\cite{PKBCBR2005GIGOAELAOMBEUP}.\uncover<6->{ %
+Diese Taktik nenn man \glsFull{GIGO}\scite{PKBCBR2005GIGOAELAOMBEUP}.\uncover<6->{ %
 Das Konvertieren vom Integer \pythonil{10 ** 400} zu einem \pythonil{float} könnte \DEzB\ einfach~\pythonil{inf} liefern.%
 }}}%
 %
@@ -87,7 +87,7 @@ Das Konvertieren vom Integer \pythonil{10 ** 400} zu einem \pythonil{float} kön
 Wenn jemand \pythonil{2.4} anstelle von \pythonil{2} eingeben würde, könnten wir einfach mit \pythonil{2} rechnen und das entsprechende Ergebnis zurückliefern.\uncover<10->{ %
 Unsere \pythonil{sqrt}-Funktion liefert \DEzB\ \pythonil{0.0} als Ergebnis, wenn jemand eine negative Zahl eingibt.}}}%
 %
-\item<11-> \alert{Wir können die Funktion beschützen, in dem wir eine Ausnahme auslösen.}\cite{MAGTOC2024EHFAP,SF2013ASROSR,GRRX2001ACSOEHMFBDOOS}~\inEN{raise an \pythonil{Exception}}%
+\item<11-> \alert{Wir können die Funktion beschützen, in dem wir eine Ausnahme auslösen.}\scite{MAGTOC2024EHFAP,SF2013ASROSR,GRRX2001ACSOEHMFBDOOS}~\inEN{raise an \pythonil{Exception}}%
 \end{enumerate}%
 }%
 %
@@ -783,7 +783,7 @@ Sie sollten \emph{immer} gelesen und verstanden werden, bevor am Kode weitergear
 %
 \item<10-> Ein \pythonil{OverflowError} ist ein besonderer Rechenfehler, bei dem das Ergebnis zu große für den Datentyp wird.%
 %
-\item<11-> Schauen wir uns die Typ-Hierarchy von Fehlern mal an\cite{PSF:P3D:TPSL:BIE}.%
+\item<11-> Schauen wir uns die Typ-Hierarchy von Fehlern mal an\scite{PSF:P3D:TPSL:BIE}.%
 \end{itemize}%
 \end{frame}%
 %

@@ -19,7 +19,7 @@
 \frametitle{Einleitung}%
 \begin{itemize}%
 %
-\item In \python, \emph{everything is an object}\cite{PSF:P3D:TPLR:OVAT,J2022PPEIAOSCD}, also \inQuotes{Alles ist ein Objekt}.%
+\item In \python, \emph{everything is an object}\scite{PSF:P3D:TPLR:OVAT,J2022PPEIAOSCD}, also \inQuotes{Alles ist ein Objekt}.%
 %
 \item<2-> Funktionen, Module, Klassen, Datentypen, Werte einfacher Datentypen, und so weiter -- alles sind Objekte.%
 %
@@ -69,12 +69,12 @@
 %
 \medskip\begin{enumerate}%
 %
-\item \pythonil{str(o)}\pythonIdx{str} sollte eine kurze Stringrepräsentation des Objekts~\pythonil{o} liefern\cite{PSF:P3D:TPLR:DM:S}.\uncover<3->{ %
+\item \pythonil{str(o)}\pythonIdx{str} sollte eine kurze Stringrepräsentation des Objekts~\pythonil{o} liefern\scite{PSF:P3D:TPLR:DM:S}.\uncover<3->{ %
 Diese Repräsentation ist hauptsächlich für Endbenutzer.\uncover<4->{ %
 \pythonil{str(o)} ruft die Dunder-Methode \dunder{str} von \pythonil{o} auf, wenn diese implementiert wurde.\uncover<5->{ %
 Sonst ruft es \pythonil{o.__repr__()} auf.}}}\medskip%
 %
-\item<6-> \pythonil{repr(o)}\pythonIdx{repr} sollte idealerweise eine String-Repräsentation liefern, die alle Informationen beinhaltet, die notwendig sind, um das Objekt~\pythonil{o} erneut zu erzeugen\cite{PSF:P3D:TPLR:DM:R}.\uncover<7->{ %
+\item<6-> \pythonil{repr(o)}\pythonIdx{repr} sollte idealerweise eine String-Repräsentation liefern, die alle Informationen beinhaltet, die notwendig sind, um das Objekt~\pythonil{o} erneut zu erzeugen\scite{PSF:P3D:TPLR:DM:R}.\uncover<7->{ %
 Das Zielpublikum sind hier Programmier, die am Kode arbeiten, und die \DEzB\ genaue Informationen in Log-Dateien schreiben oder nach Fehlern suchen müssen.\uncover<8->{ %
 \pythonil{repr(o)} ruft die Dunder-Methode \dunder{repr} auf, wenn diese implementiert wurde.\uncover<9->{ %
 Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
@@ -169,7 +169,7 @@ Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 }%
 %
 \only<-23>{%
-\item<20-> Wenn die textuelle Repräsentation der Standard-Kollektionstypen von \python\ mit \pythonilIdx{str} oder \pythonilIdx{repr} erzeugt wird, dann werden die Elemente der Kollektionen immer \pythonilIdx{repr} zu Strings konvertiert, nie mit~\pythonilIdx{str}\cite{PEP3140}.%
+\item<20-> Wenn die textuelle Repräsentation der Standard-Kollektionstypen von \python\ mit \pythonilIdx{str} oder \pythonilIdx{repr} erzeugt wird, dann werden die Elemente der Kollektionen immer \pythonilIdx{repr} zu Strings konvertiert, nie mit~\pythonilIdx{str}\scite{PEP3140}.%
 }%
 %
 \only<-25>{%
@@ -338,15 +338,15 @@ Sonst wird er name des Datentyps und die ID des Objekts geliefert.%
 }%
 %
 \only<-28>{%
-\item<27-> Wenn Sie \dunder{eq} implementieren, dann wird \python\ annehmen das \pythonil{(a != b) ==} \pythonil{not (a == b)}\pythonIdx{"!=}\pythonIdx{==}, also annehmen, dass zwei Objekte ungleich sind, wenn sie nicht gleich sind\cite{PEP207}.%
+\item<27-> Wenn Sie \dunder{eq} implementieren, dann wird \python\ annehmen das \pythonil{(a != b) ==} \pythonil{not (a == b)}\pythonIdx{"!=}\pythonIdx{==}, also annehmen, dass zwei Objekte ungleich sind, wenn sie nicht gleich sind\scite{PEP207}.%
 }%
 %
 \only<-32>{%
-\item<28-> Das ist nicht immer der Fall, obwohl ich kein Beispiel kenne, wo es nicht simmt\cite{programmingWithPython} {\dots} vielleicht war es früher mal so, dass das bei Fließkommazahlen auftreten konnte\cite{PEP754}, im Moment sehe ich das aber nicht.%
+\item<28-> Das ist nicht immer der Fall, obwohl ich kein Beispiel kenne, wo es nicht simmt\scite{programmingWithPython} {\dots} vielleicht war es früher mal so, dass das bei Fließkommazahlen auftreten konnte\scite{PEP754}, im Moment sehe ich das aber nicht.%
 }%
 %
 \only<-33>{%
-\item<29-> \python\ erlaubt uns auch, die Dunder-Methode \dunder{ne} zu implementieren, die von \pythonil{a != b} als \pythonil{a.__ne__(a)} aufgerufen wird.\cite{PEP207}%
+\item<29-> \python\ erlaubt uns auch, die Dunder-Methode \dunder{ne} zu implementieren, die von \pythonil{a != b} als \pythonil{a.__ne__(a)} aufgerufen wird.\scite{PEP207}%
 }%
 %
 \only<-34>{%

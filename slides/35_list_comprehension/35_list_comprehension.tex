@@ -29,7 +29,7 @@
 %
 \item<5-> So etwas wie \pythonil{[log(1), log(2), log(3), log(4), log(5)]} zu schreiben sieht auch nicht sehr gut aus.%
 %
-\item<6-> Zum Glück bietet \python\ die viel bequemere Syntax für \emph{list comprehension}\cite{PEP202}.%
+\item<6-> Zum Glück bietet \python\ die viel bequemere Syntax für \emph{list comprehension}\scite{PEP202}.%
 %
 \end{itemize}%
 \end{frame}%
@@ -45,7 +45,7 @@
 \locate{}{\parbox{0.975\paperwidth}{%
 \begin{itemize}%
 \only<-3>{%
-\item Diese Syntax erzeugt eine neue Liste deren Inhalt das Ergebnis einem Ausdruck \pythonil{expression} auf die Elemente \pythonil{item} einer \pythonil{sequence} sind\cite{PEP202}.%
+\item Diese Syntax erzeugt eine neue Liste deren Inhalt das Ergebnis einem Ausdruck \pythonil{expression} auf die Elemente \pythonil{item} einer \pythonil{sequence} sind\scite{PEP202}.%
 }%
 %
 \only<-4>{%
@@ -277,7 +277,7 @@
 %
 \item<7-> Die Laufzeit eines \python-Programms hängt klar von der CPU ab, auf der es läuft.%
 %
-\item<8-> Sie wird auch vom Betriebssystem, dem zur Verfügung stehenden RAM, der Festplattengeschwindigkeit, und natürlich von anderen Prozessen, die zur selben Zeit auf dem Computer laufen, beeinflusst\cite{WCLTTCMY2014BOAAOSFFTTSP}.%
+\item<8-> Sie wird auch vom Betriebssystem, dem zur Verfügung stehenden RAM, der Festplattengeschwindigkeit, und natürlich von anderen Prozessen, die zur selben Zeit auf dem Computer laufen, beeinflusst\scite{WCLTTCMY2014BOAAOSFFTTSP}.%
 %
 \item<9-> Natürlich hängt sie auch von der Version des \python-Iterpreters ab und das Ergebnis der Messung könnte also nach jedem Systemupdate anders sein.%
 %
@@ -295,7 +295,7 @@
 }%
 %
 \only<-14>{%
-\item<8-> Sie wird auch vom Betriebssystem, dem zur Verfügung stehenden RAM, der Festplattengeschwindigkeit, und natürlich von anderen Prozessen, die zur selben Zeit auf dem Computer laufen, beeinflusst\cite{WCLTTCMY2014BOAAOSFFTTSP}.%
+\item<8-> Sie wird auch vom Betriebssystem, dem zur Verfügung stehenden RAM, der Festplattengeschwindigkeit, und natürlich von anderen Prozessen, die zur selben Zeit auf dem Computer laufen, beeinflusst\scite{WCLTTCMY2014BOAAOSFFTTSP}.%
 }%
 %
 \only<-16>{%
@@ -339,7 +339,7 @@
 }%
 %
 \only<-31>{%
-\item<22-> Allerdings wäre eine einzige Messung nicht sehr verlässlich, sie könnte durch das Scheduling durch das Betriebssystem oder durch Garbage Collection vom \python-Interpreter verunreinigt werden\cite{P2002AI}.%
+\item<22-> Allerdings wäre eine einzige Messung nicht sehr verlässlich, sie könnte durch das Scheduling durch das Betriebssystem oder durch Garbage Collection vom \python-Interpreter verunreinigt werden\scite{P2002AI}.%
 }%
 %
 \only<-32>{%
@@ -359,7 +359,7 @@
 }%
 %
 \only<-37>{%
-\item<33-> Die Funktion \pythonilIdx{min} akzeptiert eine Sequenz von Elementen und gibt uns das kleinste Element daraus zurück.\cite{PSF:P3D:TPSL:BIF}%
+\item<33-> Die Funktion \pythonilIdx{min} akzeptiert eine Sequenz von Elementen und gibt uns das kleinste Element daraus zurück.\scite{PSF:P3D:TPSL:BIF}%
 }%
 %
 \only<-38>{%
@@ -371,7 +371,7 @@
 }%
 %
 \only<-40>{%
-\item<36-> Nun wird das \glsFull{formatPDF}-Dokument dieser Slides automatisch von einer \github~Action\cite{C2024GA} gebaut.%
+\item<36-> Nun wird das \glsFull{formatPDF}-Dokument dieser Slides automatisch von einer \github~Action\scite{C2024GA} gebaut.%
 }%
 %
 \only<-41>{%
@@ -444,14 +444,14 @@
 \usefulTool{timeit}{%
 \pythonilIdx{timeit} ist ein Werkzeug um die Laufzeit von kleinen Kodestücken zu messen.\uncover<12->{ %
 Es ist direkt Teil von \python.\uncover<13->{ %
-Dieses Modul vermeidet eine Menge von Fallen, in die man beim Zeit-Messen oftmals hereintappt\cite{PSF:P3D:TPSL:TMETOSCS,P2002AI}.%
+Dieses Modul vermeidet eine Menge von Fallen, in die man beim Zeit-Messen oftmals hereintappt\scite{PSF:P3D:TPSL:TMETOSCS,P2002AI}.%
 }}}%
 }}{0.475}{0.2}%
 %
 \locate{25}{%
 \parbox{0.505\paperwidth}{\noindent%
 \setlength{\paperwidth}{\linewidth}%
-Die Dokumentation von \pythonilIdx{timeit} sagt\cite{PSF:P3D:TPSL:TMETOSCS}:%
+Die Dokumentation von \pythonilIdx{timeit} sagt\scite{PSF:P3D:TPSL:TMETOSCS}:%
 {\huge{%
 \cquotation{PSF:P3D:TPSL:TMETOSCS}{\huge{%
 \emph{Note:}~it's tempting to calculate mean and standard deviation from the result vector and report these.
@@ -467,7 +467,7 @@ After that, you should look at the entire vector and apply common sense rather t
 \locate{26-30}{%
 \parbox{0.505\paperwidth}{\small%
 \bestPractice{timeMeasurement}{%
-Wenn wir die Laufzeit von Kode für bestimmte Inputs prüfen, dann ergibt es Sinn, mehrere Messungen zu machen und das \alert{Minimum} der beobachteten Ergebnisse zu nehmen\cite{PSF:P3D:TPSL:TMETOSCS}.\uncover<27->{ %
+Wenn wir die Laufzeit von Kode für bestimmte Inputs prüfen, dann ergibt es Sinn, mehrere Messungen zu machen und das \alert{Minimum} der beobachteten Ergebnisse zu nehmen\scite{PSF:P3D:TPSL:TMETOSCS}.\uncover<27->{ %
 Der Grund ist, das viele Faktoren~(CPU-Temperatur, andere Prozesse, \dots) die Laufzeit \alert{negativ} beeinflussen können.\uncover<28->{ %
 Es gibt aber keinen Faktor, der unseren Kode schneller machen kann, als die Hardware zulässt.\uncover<29->{ %
 Also gibt uns das Minimum den akuratesten Eindruck darauf, wie schnell unser Kode auf unserem Computer laufen kann.\uncover<30->{ %
