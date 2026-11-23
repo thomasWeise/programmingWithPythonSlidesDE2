@@ -201,7 +201,7 @@ Unless explicitly silenced.%
 %
 \begin{enumerate}%
 %
-\item Informationen über den Fehler und Informationen über den aktuellen Ausführungszustand des Programs~(\DEzB\ die aktuelle Kode-Zeile, die Aufruf-Hierarchie) werden einem Objekt gespeichert~(der \pythonilIdx{Exception}).%
+\item Informationen über den Fehler und Informationen über den aktuellen Ausführungszustand des Programms~(\DEzB\ die aktuelle Kode-Zeile, die Aufruf-Hierarchie) werden einem Objekt gespeichert~(der \pythonilIdx{Exception}).%
 %
 \item<5-> Der Kontrollfluss verlässt sofort den aktuellen Kodeblock sowie alle aufrufenden Kodeblöcke und Funktionen.\uncover<6->{ %
 Er springt in der Aufrufhierarchie so lange nach oben, bis er Kode erreicht, der die ausgelöste Ausnahme behandeln kann.\uncover<7->{ %
@@ -230,25 +230,25 @@ Dadurch wird es viel einfacher, herauszufinden, was den Fehler ausgelöst hat, \
 In einer fehlerhaften Situation oder wenn fehlerhafte Daten auftauchen, dann kann das Problem sich nicht aus dem aktuellen Kontext heraus fortpflanzen.\uncover<6->{ %
 Eine Ausnahme wird ausgelöst, die den aktuellen Ausführungspfad verlässt und somit den verunreinigten Kontrollfluss beendet.}}}%
 %
-\item<6-> \alert{Programmierer werden gezwungen, explizit mit der fehlerhaften Situation umzugehen.}\only<-10>{\uncover<7->{ %
-Sie können den Fehler nicht einfach \alert{implizit} ignorieren.\uncover<8->{ %
-Natürlich können sie das Ausnahme-Objekt abfangen und wegwerfen.\uncover<9->{ %
-Aber sie müssen es \alert{explizit} und \alert{mit Absicht} machen.\uncover<10->{ %
+\item<7-> \alert{Programmierer werden gezwungen, explizit mit der fehlerhaften Situation umzugehen.}\only<-10>{\uncover<8->{ %
+Sie können den Fehler nicht einfach \alert{implizit} ignorieren.\uncover<9->{ %
+Natürlich können sie das Ausnahme-Objekt abfangen und wegwerfen.\uncover<10->{ %
+Aber sie müssen es \alert{explizit} und \alert{mit Absicht} machen.\uncover<11->{ %
 Fehler können nicht unbeabsichtigt übersehen werden, denn dann würde die Ausnahme das Programm beenden.}}}}}%
 %
-\item<11-> Man kann vielleicht sagen:~\emph{\inQuotes{Aber wenn wir die Ausnahme nicht explizit behandeln, dann stürzt das Programm doch ab! Das ist doch schlecht?}}\only<-13>{\uncover<12->{ %
-Aber was ist schlimmer?\uncover<13->{ %
-Das ein Fehler das aktuelle Programm unerwartet zum Absturz bringt {\dots} oder dass alle zukünftigen Ausgaben des Programms falsch sind, und zwar \emph{unerkannt} falsch?}}}\uncover<14->{ Aber unentdeckte Fehler wären noch viel schlimmer\dots}%
+\item<12-> Man kann vielleicht sagen:~\emph{\inQuotes{Aber wenn wir die Ausnahme nicht explizit behandeln, dann stürzt das Programm doch ab! Das ist doch schlecht?}}\only<-14>{\uncover<13->{ %
+Aber was ist schlimmer?\uncover<14->{ %
+Das ein Fehler das aktuelle Programm unerwartet zum Absturz bringt {\dots} oder dass alle zukünftigen Ausgaben des Programms falsch sind, und zwar \emph{unerkannt} falsch?}}}\uncover<15->{ Aber unentdeckte Fehler wären noch viel schlimmer\dots}%
 %
 \end{enumerate}}%
 \end{itemize}%
 %
-\uncover<14->{%
+\uncover<15->{%
 %
 \bestPractice{exceptions}{%
-Fehler sollten nicht ignoriert werden und Eingabedaten sollten nicht repariert werden.\uncover<15->{ %
-Stattdessen sollten Eingabedaten von Funktion, wo immer sinnvol, auf Gültigkeit geprüft werden.\uncover<16->{ %
-Fehlerhafte Eingabedaten sollten durch Fehlermeldungen signalisiert werden, die denn Kontrollfluss unterbrechen.\uncover<17->{ %
+Fehler sollten nicht ignoriert werden und Eingabedaten sollten nicht repariert werden.\uncover<16->{ %
+Stattdessen sollten Eingabedaten von Funktion, wo immer sinnvol, auf Gültigkeit geprüft werden.\uncover<17->{ %
+Fehlerhafte Eingabedaten sollten durch Fehlermeldungen signalisiert werden, die denn Kontrollfluss unterbrechen.\uncover<18->{ %
 \pythonilsIdx{Exception} sollten so früh wie möglich ausgelöst werden und zwar immer, wenn eine unerwartete Situation eintritt.}}}%
 }}%
 %
