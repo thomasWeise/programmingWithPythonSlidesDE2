@@ -366,7 +366,7 @@ Ein \pythonilIdx{except}-Block darf nicht dafür verwendet werden, beliebige \py
 \uncover<32->{%
 \bestPractice{noAssignAfterRaise}{%
 Beachten Sie, dass der Kontrollfluss sofort den aktuellen Block verlässt, wenn eine Ausnahme ausgelöst wird.\uncover<33->{ %
-Der Befehl, in dem die Ausnahme ausgelöst wird, wird nicht zuende geführt, sondern sofort abgebrochen.\uncover<34->{ %
+Der Befehl, in dem die Ausnahme ausgelöst wird, wird nicht zuende ausgeführt, sondern sofort abgebrochen.\uncover<34->{ %
 Darum können dann keine Variablenzuweisungen mehr stattfinden und es ist möglich, das Variablen undefiniert bleiben.\uncover<35->{ %
 Beachten Sie dass, wenn Sie auf Variablen zugreifen, die in einem \pythonil{try}-block zugewiesen werden.}}}%
 }%
@@ -871,7 +871,7 @@ Beachten Sie dass, wenn Sie auf Variablen zugreifen, die in einem \pythonil{try}
 }%
 %
 \only<-15>{%
-\item<11-> \pythonIdx{IO}~ist der Basistyp für alle text-basierten \pgls{inOut}-Ströme und wir benutzen ihn später als \glslink{typeHint}{Type-Hint}.%
+\item<11-> \pythonilIdx{IO}~ist der Basistyp für alle text-basierten \pgls{inOut}-Ströme und wir benutzen ihn später als \glslink{typeHint}{Type-Hint}.%
 }%
 %
 \only<-16>{%
